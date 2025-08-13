@@ -9,11 +9,13 @@ function App() {
 
   const addValue = () =>{
     // counter = counter + 1;
-    setCounter(counter + 1)
+    // setCounter(prevcounter => Math.min(prevcounter +1,20));
+    setCounter(Math.min(counter + 1, 20));
   }
 
   const removeValue = () =>{
-    setCounter(counter - 1);
+    // setCounter(prevcounter => Math.max(prevcounter - 1, 0));
+    setCounter(Math.max(counter - 1, 0));
   }
   return (
     <>
