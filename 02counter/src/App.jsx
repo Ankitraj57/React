@@ -11,15 +11,19 @@ function App() {
     // counter = counter + 1;
     // setCounter(prevcounter => Math.min(prevcounter +1,20));
     // setCounter(Math.min(counter + 1, 20));
-    setCounter(prevCounter => prevCounter + 1)
-    setCounter(prevCounter => prevCounter + 1)
-    setCounter(prevCounter => prevCounter + 1)
-    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => Math.min(prevCounter + 1, 40))
+    setCounter(prevCounter => Math.min(prevCounter + 1, 40))
+    setCounter(prevCounter => Math.min(prevCounter + 1, 40))
+    setCounter(prevCounter => Math.min(prevCounter + 1, 40))
   }
 
   const removeValue = () =>{
     // setCounter(prevcounter => Math.max(prevcounter - 1, 0));
-    setCounter(Math.max(counter - 1, 0));
+    // setCounter(Math.max(counter - 1, 0));
+    setCounter(prevCounter => Math.max(prevCounter - 1, 0))
+    setCounter(prevCounter => Math.max(prevCounter - 1, 0))
+    setCounter(prevCounter => Math.max(prevCounter - 1, 0))
+    setCounter(prevCounter => Math.max(prevCounter - 1, 0))
   }
   return (
     <>
