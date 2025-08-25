@@ -6,7 +6,7 @@ import Todos from './components/Todos'
 function App() {
   return (
     <>
-      <h1>Learn about redux toolkit</h1>
+      <h1 className='bg-gray-950 text-white p-2 hover:bg-red-500'>Learn About ReduxToolkit/React-Redux</h1>
       <AddTodo/>
       <Todos/>
     </>
